@@ -2,7 +2,7 @@ package palindrome
 
 import "strconv"
 
-// Leverage Double Index via String  — O(?) Time, O(N) Space
+// Leverage Double Index via String  — O(N) Time, O(N) Space
 func IsIntegerPalindrome1(number int) bool {
 	str := strconv.Itoa(number)
 	//We got a pretty efficient string palindrome algorithm,
@@ -11,7 +11,7 @@ func IsIntegerPalindrome1(number int) bool {
 	return IsStringPalindrome4(str)
 }
 
-// Divide and Conquer  — O(N) Time, O(1) Space
+// Divide and Conquer  — O(Log(N)) Time, O(1) Space
 func IsIntegerPalindrome2(number int) bool {
 	originalNumber := number
 	reverseNumber := 0
